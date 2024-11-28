@@ -1,0 +1,261 @@
+---
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Content from '~/components/widgets/Content.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Mave - Empresas',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="Empresas"
+    title=""
+    subtitle=`En MAVE, ayudamos a las empresas a desarrollar las habilidades tecnológicas y
+estratégicas necesarias para enfrentar los desafíos del siglo XXI. A través de programas
+de capacitación innovadores y personalizados, potenciamos la creatividad, el
+pensamiento crítico y el dominio de herramientas tecnológicas clave, como la inteligencia
+artificial, la ciberseguridad y la computación en la nube. Combinamos educación,
+tecnología y sostenibilidad para ofrecer soluciones efectivas que optimizan el rendimiento
+de los equipos, fomentando una cultura de innovación y transformación digital.`
+    actions={[
+      /*{ variant: 'primary', target: '_blank', text: 'Start exploring', href: '/' }*/
+    ]}
+    image={{
+      src: '~/assets/images/image1.jpg',
+      alt: 'AstroWind Hero Image',
+    }}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <!-- Content Widget **************** -->
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isAfterContent
+    items={[
+      {
+        title: 'Creación de una página web con optimización de búsqueda (SEO)',
+        description:
+          'En este taller, los participantes aprenderán a crear y optimizar una página web para mejorar su visibilidad en los motores de búsqueda. Se abordarán técnicas clave de SEO, como el uso de palabras clave, estructura de enlaces y optimización de contenido, brindando herramientas prácticas para aumentar el alcance en línea.',
+        icon: 'tabler:clock',
+      },
+      {
+        title: 'Ciberseguridad para emprendedores o empresas',
+        description:
+          'Este taller proporciona una introducción a la ciberseguridad específicamente para emprendedores y pequeñas empresas. Los participantes aprenderán sobre las amenazas comunes, buenas prácticas de seguridad digital y cómo proteger la información de su negocio y la de sus clientes.',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Como usar la IA en tu negocio.',
+        description:
+          'En este taller, se explorará el uso práctico de la inteligencia artificial en el contexto empresarial. Los asistentes conocerán cómo aprovechar herramientas y algoritmos de IA para optimizar procesos, mejorar la experiencia del cliente y tomar decisiones basadas en datos, impulsando así el crecimiento de sus negocios.',
+        icon: 'tabler:school',
+      },
+      // {
+      //   title: '',
+      //   description: '',
+      //   icon: 'tabler:coin',
+      // },
+      // {
+      //   title: '',
+      //   description: '',
+      //   icon: 'tabler:file-download',
+      // },
+    ]}
+    image={{
+      src: '~/assets/images/image2.jpg',
+      alt: 'Benefits Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Talleres
+      </h3>
+    </Fragment>
+  </Content>
+
+  <!-- <Content
+    isReversed
+    items={[
+      {
+        title: 'Sustentabilidad',
+        description:
+          'En este taller, los participantes aprenderán sobre prácticas sustentables que promuevan un equilibrio con el medio ambiente. Se explorarán temas como la reducción de residuos, el consumo responsable y el aprovechamiento de los recursos naturales.',
+        icon: 'tabler:wand',
+      },
+      {
+        title: 'Cambio climático',
+        description:
+          'Este taller aborda el cambio climático desde sus causas hasta sus efectos en los ecosistemas. Los participantes comprenderán cómo sus acciones pueden influir en el clima y aprenderán formas de reducir su huella de carbono.',
+        icon: 'tabler:settings',
+      },
+      {
+        title: 'Energías renovables',
+        description:
+          'Aquí, los asistentes descubrirán las distintas fuentes de energía renovable como la solar, eólica e hidroeléctrica. Se les enseñará cómo estas energías pueden reemplazar a los combustibles fósiles y ayudar a reducir la contaminación ambiental.',
+        icon: 'tabler:settings',
+      },
+      {
+        title: 'Conservación de especies',
+        description:
+          'Este taller se centra en la importancia de proteger la biodiversidad. Los participantes conocerán especies en peligro y estrategias de conservación, así como el impacto que estas especies tienen en el equilibrio de los ecosistemas.',
+        icon: 'tabler:settings',
+      },
+      {
+        title: 'El futuro del clima',
+        description:
+          'Explorando escenarios futuros, este taller presenta los posibles cambios en el clima y su impacto en el planeta. Los participantes aprenderán sobre las acciones necesarias para mitigar el calentamiento global y proteger los ecosistemas.',
+        icon: 'tabler:settings',
+      },
+      {
+        title: 'Polinización',
+        description:
+          'Este taller destaca el papel crucial de los polinizadores, como abejas y mariposas, en la salud de los ecosistemas y la producción de alimentos. Se explicará cómo podemos ayudar a proteger estos seres vitales y mejorar la biodiversidad en entornos naturales y urbanos.',
+        icon: 'tabler:settings',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/image3.jpg',
+      alt: 'Features Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Talleres de educación ambiental enchufados
+      </h3>
+    </Fragment>
+  </Content>
+
+  <Content
+    isAfterContent
+    items={[
+      {
+        title: 'Taller de Matemáticas: Fundamentos Básicos (7 a 10 años)',
+        description:
+          'Este taller introduce a los más pequeños en el mundo de las matemáticas de manera sencilla y divertida, ayudándolos a desarrollar una base sólida para el pensamiento lógico y numérico.',
+        icon: 'tabler:clock',
+      },
+      {
+        title: 'Talleres de Ciencias',
+        description:
+          'Explorando temas como el ciclo del agua, los ecosistemas y la energía, los estudiantes interactúan con experimentos y simulaciones en Minecraft Education. Este taller fomenta la curiosidad científica y permite que los alumnos visualicen conceptos complejos en un entorno divertido y visualmente atractivo.',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Taller de Lenguaje (7 a 13 años)',
+        description:
+          'CA través de este taller, los estudiantes aprenderán a comprender y extraer información de textos, crear sus propias historias y conocer grandes obras literarias.',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Taller de Educación Financiera (7 a 13 años)',
+        description:
+          'Enseñamos a los niños los conceptos básicos de finanzas personales, incluyendo el ahorro, el valor del dinero y la planificación financiera de manera fácil y práctica.',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Talleres de Equidad e Inclusión (8 a 18 años)',
+        description:
+          'Los estudiantes aprenderán sobre justicia social, identidad, tolerancia y cómo promover una sociedad más inclusiva y equitativa a través de actividades reflexivas y colaborativas.',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Taller de Historia (7 a 13 años)',
+        description:
+          'Viaja al pasado y conoce las civilizaciones más influyentes, descubre ciudades antiguas y crea tu propia cultura mientras te sumerges en los momentos clave de la historia.',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Talleres Socioemocionales (7 a 13 años)',
+        description:
+          'Estos talleres promueven el bienestar emocional, la empatía y la toma de decisiones responsables. Ideales para el desarrollo personal y el fortalecimiento de habilidades sociales en los estudiantes.',
+        icon: 'tabler:school',
+      },
+      // {
+      //   title: '',
+      //   description: '',
+      //   icon: 'tabler:coin',
+      // },
+      // {
+      //   title: '',
+      //   description: '',
+      //   icon: 'tabler:file-download',
+      // },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1552664688-cf412ec27db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      alt: 'Benefits Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Talleres multidisciplinarios para diferentes asignaturas con Minecraft Education
+      </h3>
+    </Fragment>
+  </Content> -->
+
+  <!-- Testimonials Widget *********** -->
+
+  <!-- <Testimonials
+    title="Words from real customers"
+    testimonials={[
+      {
+        testimonial: `The designs are not only visually appealing but also highly professional. The templates have saved me a significant amount of time while helping me make a lasting impression on my clients.`,
+        name: 'Emily Kennedy',
+        job: 'Front-end developer',
+        image: {
+          src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
+          alt: 'Emily Kennedy Image',
+        },
+      },
+      {
+        testimonial: `It beautifully showcases my work, with its clean and elegant design that lets my photographs shine. Customization was a breeze, even for a non-tech person like me. The result is a professional and immersive portfolio that's garnered numerous compliments.`,
+        name: 'Sarah Hansen',
+        job: 'Photographer',
+        image: {
+          src: 'https://images.unsplash.com/photo-1561406636-b80293969660?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+          alt: 'Sarah Hansen Image',
+        },
+      },
+      {
+        testimonial: `I discovered these templates and I'm impressed by their variety and quality. They've helped me establish a consistent brand image across my marketing and social platforms, elevating my business's overall appearance.`,
+        name: 'Mark Wilkinson',
+        job: 'Small business owner',
+        image: {
+          src: 'https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=824&q=80',
+          alt: 'Mark Wilkinson Image',
+        },
+      },
+    ]}
+    callToAction={{
+      target: '_blank',
+      text: 'More testimonials...',
+      href: 'https://github.com/onwidget/astrowind',
+      icon: 'tabler:chevron-right',
+    }}
+  />
+
+  CallToAction Widget *********** -->
+
+  <!-- <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Start exploring',
+        href: '/',
+      },
+    ]}
+    title="Dive into our template collection"
+    subtitle="Whether you're in business, design, or education, our templates are here to elevate your projects."
+  /> -->
+</Layout>
